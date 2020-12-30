@@ -11,7 +11,7 @@ DF_SYNC_FILE="No"
 DF_LOG_FILE="${HOME}/.gdrive/butgg.log"
 DAY_REMOVE="7"
 DF_DAY_REMOVE="7"
-DF_GDRIVE_ID="None"
+DF_GDRIVE_ID="1I7epkzrDH8ktvqt0N-1cf1yXzmOdl3XT"
 DF_EMAIL_USER="None"
 DF_EMAIL_PASS="None"
 DF_EMAIL_TO="None"
@@ -282,17 +282,15 @@ setup_config(){
     show_write_log "Setting up config file..."
     echo ""
     echo "Berhasil Setting Directory Ke ${DF_BACKUP_DIR}"
-    echo "Berhasil Setting Hapus Backup Ke ${DF_DAY_REMOVE} hari"
+    echo "Berhasil Setting Hapus Backup Ke ${DF_DAY_REMOVE} day"
     echo ""
     echo "Read more https://github.com/mbrother2/backuptogoogle/wiki/What-is-the-option-SYNC_FILE%3F"
-    read -p " Do you want only sync file(default no)(y/n): " SYNC_FILE
     echo ""
     echo "Read more https://github.com/mbrother2/backuptogoogle/wiki/Get-Google-folder-ID"
     if [ "${SYNC_FILE}" == "y" ]
     then
         echo "Because you choose sync file method, so you must enter exactly Google folder ID here!"
     fi
-    read -p " Your Google folder ID(default ${DF_GDRIVE_ID}): " GDRIVE_ID
     if [ "${SYNC_FILE}" == "y" ]
     then
         TAR_BEFORE_UPLOAD=${DF_TAR_BEFORE_UPLOAD}
