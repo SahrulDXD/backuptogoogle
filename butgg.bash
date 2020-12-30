@@ -13,6 +13,8 @@ DF_GDRIVE_ID="None"
 DF_EMAIL_USER="None"
 DF_EMAIL_PASS="None"
 DF_EMAIL_TO="None"
+gg_client_id="637161065334-ui05138msrudldflb97bc275ncui2cfj.apps.googleusercontent.com"
+gg_client_secret="m6aGgVg7mDLdW_Ibt8Gb-oXl"
 GDRIVE_BIN="${HOME}/bin/gdrive"
 GDRIVE_TOKEN="${HOME}/.gdrive/token_v2.json"
 CRON_BACKUP="${HOME}/bin/cron_backup.bash"
@@ -229,8 +231,8 @@ build_gdrive(){
     show_write_log "Build your own gdrive!"
     echo ""
     echo "Read more: https://github.com/mbrother2/backuptogoogle/wiki/Create-own-Google-credential-step-by-step"
-    read -p " Your Google API client_id: " gg_client_id
-    read -p " Your Google API client_secret: " gg_client_secret
+    echo "AUTO CLIENT ID"
+    echo "AUTO CLIENT SECRET"
     sed -i "s#^const ClientId =.*#const ClientId = \"${gg_client_id}\"#g" $HOME/bin/gdrive/handlers_drive.go
     sed -i "s#^const ClientSecret =.*#const ClientSecret = \"${gg_client_secret}\"#g" $HOME/bin/gdrive/handlers_drive.go
     echo ""
