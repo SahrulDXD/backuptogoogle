@@ -281,8 +281,8 @@ setup_credential(){
 setup_config(){
     show_write_log "Setting up config file..."
     echo ""
-    read -p " Which directory on your server do you want to upload to Google Drive?(default ${DF_BACKUP_DIR}): " BACKUP_DIR
-    read -p " How many days do you want to keep backup on Google Drive?(default ${DF_DAY_REMOVE}): " DAY_REMOVE
+    echo "Berhasil Setting Directory Ke ${DF_BACKUP_DIR}"
+    echo "Berhasil Setting Hapus Backup Ke ${DF_DAY_REMOVE} hari"
     echo ""
     echo "Read more https://github.com/mbrother2/backuptogoogle/wiki/What-is-the-option-SYNC_FILE%3F"
     read -p " Do you want only sync file(default no)(y/n): " SYNC_FILE
