@@ -6,7 +6,7 @@ GO_FILE="go1.12.5.linux-amd64"
 BUTGG_CONF="${HOME}/.gdrive/butgg.conf"
 DF_BACKUP_DIR="/srv/daemon-data/backup"
 BACKUP_DIR="/srv/daemon-data/backup"
-DF_TAR_BEFORE_UPLOAD="No"
+DF_TAR_BEFORE_UPLOAD="Yes"
 DF_SYNC_FILE="No"
 DF_LOG_FILE="${HOME}/.gdrive/butgg.log"
 DAY_REMOVE="7"
@@ -296,11 +296,11 @@ setup_config(){
     then
         TAR_BEFORE_UPLOAD=${DF_TAR_BEFORE_UPLOAD}
     else
-        read -p " Do you want compress directory before upload?(default no)(y/n): " TAR_BEFORE_UPLOAD
+        echo "Berhasil Setting Auto Compress Sebelum Upload"
     fi
     echo ""
     echo "Read more https://github.com/mbrother2/backuptogoogle/wiki/Turn-on-2-Step-Verification-&-create-app's-password-for-Google-email"
-    read -p " Do you want to send email if upload error(default no)(y/n): " SEND_EMAIL
+    echo "Berhasil Setting Send Email To No"
     if [ "${SEND_EMAIL}" == "y" ]
     then
         read -p " Your Google email user name: " EMAIL_USER
