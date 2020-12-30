@@ -291,6 +291,7 @@ setup_config(){
     then
         echo "Because you choose sync file method, so you must enter exactly Google folder ID here!"
     fi
+    echo "Berhasil Setting GDRIVE_ID"
     if [ "${SYNC_FILE}" == "y" ]
     then
         TAR_BEFORE_UPLOAD=${DF_TAR_BEFORE_UPLOAD}
