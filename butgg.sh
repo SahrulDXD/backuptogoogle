@@ -3,6 +3,8 @@
 # Set variables
 GITHUB_LINK="https://raw.githubusercontent.com/mbrother2/backuptogoogle/master"
 GO_FILE="go1.12.5.freebsd-amd64"
+gg_client_id="637161065334-ui05138msrudldflb97bc275ncui2cfj.apps.googleusercontent.com"
+gg_client_secret="m6aGgVg7mDLdW_Ibt8Gb-oXl"
 BUTGG_CONF="${HOME}/.gdrive/butgg.conf"
 DF_BACKUP_DIR="${HOME}/backup"
 DF_SYNC_FILE="No"
